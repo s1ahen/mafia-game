@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mafia Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mafia Game</h1>
+        <div id="menu">
+            <button onclick="showCreateGame()">Create Game</button>
+            <button onclick="showJoinGame()">Join Game</button>
+        </div>
+        <div id="create" style="display: none;">
+            <input type="text" id="createName" placeholder="Enter your name">
+            <button onclick="createGame()">Create Game</button>
+            <button onclick="goBack()">Back</button>
+        </div>
+        <div id="join" style="display: none;">
+            <input type="text" id="joinName" placeholder="Enter your name">
+            <input type="text" id="gameCode" placeholder="Enter game code">
+            <button onclick="joinGame()">Join Game</button>
+            <button onclick="goBack()">Back</button>
+        </div>
+        <div id="lobby" style="display: none;">
+            <h2>Lobby - Game Code: <span id="lobbyGameCode"></span></h2>
+            <h3>Players:</h3>
+            <ul id="playerList"></ul>
+            <button onclick="startGame()">Start Game</button>
+        </div>
+        <div id="reveal" style="display: none;">
+            <h2>Game Started!</h2>
+            <button onclick="revealRole()">Reveal Role</button>
+        </div>
+        <div id="role" style="display: none;">
+            <h2>Your role: <span id="roleName"></span></h2>
+            <button onclick="submitAction()">Submit Action</button>
+        </div>
+    </div>
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
 
