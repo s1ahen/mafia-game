@@ -1,1 +1,68 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #F7DCB9;
+    color: #914F1E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    border: 2px solid #DEAC80;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #B5C18E;
+}
+
+h1 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+input[type="text"] {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 2px solid #DEAC80;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    width: calc(100% - 1rem);
+}
+
+button {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: #F7DCB9;
+    background-color: #914F1E;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #DEAC80;
+}
+
+#role, #reveal {
+    display: none;
+}
+
+#roleName {
+    font-weight: 700;
+}
+
+#lobby ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#lobby li {
+    font-size: 1rem;
+    padding: 0.2rem 0;
+}
 
